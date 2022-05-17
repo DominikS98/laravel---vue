@@ -24,7 +24,8 @@ export default {
             if (this.id) {
                 axios
                     .put(
-                        "/api/item/" + this.id,
+                        "https://laravelappnew.herokuapp.com/api/item/" +
+                            this.id,
                         {
                             item: {
                                 model: this.model,
@@ -48,7 +49,7 @@ export default {
             } else {
                 axios
                     .post(
-                        "/api/item/store",
+                        "https://laravelappnew.herokuapp.com/api/item/store",
                         {
                             item: {
                                 model: this.model,

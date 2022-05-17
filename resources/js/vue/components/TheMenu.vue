@@ -17,7 +17,7 @@ export default {
     methods: {
         logout() {
             axios
-                .post("/api/logout", {
+                .post("https://laravelappnew.herokuapp.com/api/logout", {
                     headers: {
                         Authorization:
                             "Bearer " + localStorage.getItem("token"),

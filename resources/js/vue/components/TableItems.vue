@@ -59,7 +59,7 @@ export default {
                     });
             } else {
                 axios
-                    .get("/api/items/search/" + this.input, {
+                    .get("https://laravelappnew.herokuapp.com/api/items/search/" + this.input, {
                         headers: {
                             Authorization:
                                 "Bearer " + localStorage.getItem("token"),

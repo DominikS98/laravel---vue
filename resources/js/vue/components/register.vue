@@ -37,7 +37,7 @@ export default {
         sendData() {
             axios
                 .post(
-                    "/api/register",
+                    "https://laravelappnew.herokuapp.com/api/register",
                     {
                         name: this.name,
                         email: this.email,

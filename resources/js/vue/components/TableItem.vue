@@ -32,7 +32,7 @@ export default {
         deleteItem(id) {
             if (confirm("are you sure?")) {
                 axios
-                    .delete("/api/item/" + id, {
+                    .delete("https://laravelappnew.herokuapp.com/api/item/" + id, {
                         headers: {
                             Authorization:
                                 "Bearer " + localStorage.getItem("token"),

@@ -26,7 +26,7 @@ export default {
         sendData() {
             axios
                 .post(
-                    "/api/login",
+                    "https://laravelappnew.herokuapp.com/api/login",
                     {
                         email: this.email,
                         password: this.password,
