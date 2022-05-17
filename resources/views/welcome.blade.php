@@ -13,6 +13,7 @@
 
 <body>
     <div id="app">
+        dasd
         <hello-world />
     </div>
 </body>
