@@ -30,7 +30,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
- 
 });
 Route::get('/items/search/{name}', [ItemController::class, 'search']);
 Route::get('/items', [ItemController::class, 'index']);
